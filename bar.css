@@ -1,0 +1,64 @@
+/* for swap script */
+.main {
+    display: none;
+    width: 80rem;
+    height: 30rem;
+    margin: auto;
+}
+
+/* id */
+.id #id {
+    display: block;
+}
+/* hitam */
+.hitam #hitam {
+    display: block;
+}
+
+/* jahe */
+.jahe #jahe {
+    display: block;
+}
+
+/* kencur */
+.kencur #kencur {
+    display: block;
+}
+
+/* kunyit */
+.kunyit #kunyit {
+    display: block;
+}
+
+/* laos */
+.laos #laos {
+    display: block;
+}
+
+/* temulawak */
+.lawak #lawak {
+    display: block;
+}
+
+/* lempuyangan */
+.lemp #lemp {
+    display: block;
+}
+
+/* endfor */
+
+body {
+    background-color: black;
+}
+
+#graph {
+    margin: auto;
+    background-color: white;
+    width: 80rem;
+}
+
+.graphcarr {
+    text-align: center;
+    align-items: center;
+}
+

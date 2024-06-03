@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="bar.css">
+    <script src="script/barmain.js"></script>
+    <script src="script/barhitam.js"></script>
+    <script src="script/barjahe.js"></script>
+    <script src="script/barkencur.js"></script>
+    <script src="script/barkunyit.js"></script>
+    <script src="script/barlaos.js"></script>
+    <script src="script/barlawak.js"></script>
+    <script src="script/barlemp.js"></script>
+    <title>bar</title>
+</head>
+
+<body>
+    <button type="button" class="open-filein" data-target="id">id</button>
+    <button type="button" class="open-filein" data-target="hitam">temuireng</button>
+    <button type="button" class="open-filein" data-target="jahe">jahe</button>
+    <button type="button" class="open-filein" data-target="kencur">kencur</button>
+    <button type="button" class="open-filein" data-target="kunyit">kunyit</button>
+    <button type="button" class="open-filein" data-target="laos">laos</button>
+    <button type="button" class="open-filein" data-target="lawak">temulawak</button>
+    <button type="button" class="open-filein" data-target="lemp">lempuyangan</button>
+    <div class="graphcarr">
+        <div id="graph" class="id">
+            <div id="id" class="main"></div>
+            <div id="hitam" class="main"></div>
+            <div id="jahe" class="main"></div>
+            <div id="kencur" class="main"></div>
+            <div id="kunyit" class="main"></div>
+            <div id="laos" class="main"></div>
+            <div id="lawak" class="main"></div>
+            <div id="lemp" class="main"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    const swap = localStorage.getItem('graph');
+    const graph = document.getElementById("graph");
+    const btns = document.querySelectorAll("[data-target]");
+
+    btns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            localStorage.setItem('graph', btn.dataset.target);
+            location.reload();
+        });
+    });
+
+    if (swap === "id") {
+        graph.className = "id";
+    }
+    if (swap === "hitam") {
+        graph.className = "hitam";
+    }
+    if (swap === "jahe") {
+        graph.className = "jahe";
+    }
+    if (swap === "kencur") {
+        graph.className = "kencur";
+    }
+    if (swap === "kunyit") {
+        graph.className = "kunyit";
+    }
+    if (swap === "laos") {
+        graph.className = "laos";
+    }
+    if (swap === "lawak") {
+        graph.className = "lawak";
+    }
+    if (swap === "lemp") {
+        graph.className = "lemp";
+    }
+</script>
