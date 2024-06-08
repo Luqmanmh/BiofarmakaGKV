@@ -10,8 +10,14 @@
 .id #id {
     display: block;
 }
+.id .description.id-desc {
+    display: block;
+}
 /* hitam */
 .hitam #hitam {
+    display: block;
+}
+.hitam .description.hitam-desc {
     display: block;
 }
 
@@ -19,9 +25,15 @@
 .jahe #jahe {
     display: block;
 }
+.jahe .description.jahe-desc {
+    display: block;
+}
 
 /* kencur */
 .kencur #kencur {
+    display: block;
+}
+.kencur .description.kencur-desc {
     display: block;
 }
 
@@ -29,9 +41,15 @@
 .kunyit #kunyit {
     display: block;
 }
+.kunyit .description.kunyit-desc {
+    display: block;
+}
 
 /* laos */
 .laos #laos {
+    display: block;
+}
+.laos .description.laos-desc {
     display: block;
 }
 
@@ -39,16 +57,22 @@
 .lawak #lawak {
     display: block;
 }
+.lawak .description.lawak-desc {
+    display: block;
+}
 
 /* lempuyangan */
 .lemp #lemp {
+    display: block;
+}
+.lemp .description.lemp-desc {
     display: block;
 }
 
 /* endfor */
 
 body {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 #graph {
@@ -62,3 +86,9 @@ body {
     align-items: center;
 }
 
+.description {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: black;
+    display: none; /* Default to hidden */
+}

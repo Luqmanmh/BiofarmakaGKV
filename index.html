@@ -37,6 +37,14 @@
             <div id="lawak" class="main"></div>
             <div id="lemp" class="main"></div>
         </div>
+        <div class="description id-desc">Pada data Produksi Tanaman Biofarmaka Indonesia, dapat dilihat secara keseluruhan Jahe memiliki jumlah paling banyak jika dibandingkan dengan tanaman lain selama 2 tahun</div>
+        <div class="description hitam-desc">Selama 2 tahun, Jawa Timur menjadi produsen Temuireng terbesar yaitu sebesar 4.163.118 pada tahun 2021 dan 2.977.873 pada tahun 2022</div>
+        <div class="description jahe-desc">Pada tahun 2021 Sulawesi Selatan sebagai produsen Jahe terbesar yaitu sebesar 60.793.383 sedangkan pada tahun 2022 oleh Jawa Barat yaitu sebesar 54.741.570</div>
+        <div class="description kencur-desc">Selama 2 tahun, Jawa Tengah menjadi produsen Kencur terbesar yaitu sebesar 15.612.280 pada tahun 2021 dan 14.777.968 pada tahun 2022</div>
+        <div class="description kunyit-desc">Selama 2 tahun, Jawa Timur menjadi produsen Kunyit terbesar yaitu sebesar 82.988.205 pada tahun 2021 dan 102.772.963 pada tahun 2022</div>
+        <div class="description laos-desc">Selama 2 tahun, Jawa Barat menjadi produsen Laos terbesar yaitu sebesar 19.385.851 pada tahun 2021 dan 17.984.286 pada tahun 2022</div>
+        <div class="description lawak-desc">Selama 2 tahun, Jawa Timur menjadi produsen Temulawak terbesar yaitu sebesar 23.111.308 pada tahun 2021 dan 20.816.841 pada tahun 2022</div>
+        <div class="description lemp-desc">Selama 2 tahun, Jawa Timur menjadi produsen Lempuyangan terbesar yaitu sebesar 5.096.901 pada tahun 2021 dan 3.784.797 pada tahun 2022</div>
     </div>
 </body>
 
@@ -44,6 +52,7 @@
 <script>
     const swap = localStorage.getItem('graph');
     const graph = document.getElementById("graph");
+    const descriptions = document.querySelectorAll('.description');
     const btns = document.querySelectorAll("[data-target]");
 
     btns.forEach((btn) => {
@@ -53,28 +62,17 @@
         });
     });
 
-    if (swap === "id") {
-        graph.className = "id";
-    }
-    if (swap === "hitam") {
-        graph.className = "hitam";
-    }
-    if (swap === "jahe") {
-        graph.className = "jahe";
-    }
-    if (swap === "kencur") {
-        graph.className = "kencur";
-    }
-    if (swap === "kunyit") {
-        graph.className = "kunyit";
-    }
-    if (swap === "laos") {
-        graph.className = "laos";
-    }
-    if (swap === "lawak") {
-        graph.className = "lawak";
-    }
-    if (swap === "lemp") {
-        graph.className = "lemp";
+    if (swap) {
+        graph.className = swap;
+        descriptions.forEach(desc => {
+            if (desc.classList.contains(`${swap}-desc`)) {
+                desc.style.display = 'block';
+            } else {
+                desc.style.display = 'none';
+            }
+        });
+    } else {
+        graph.className = 'id';
+        document.querySelector('.id-desc').style.display = 'block';
     }
 </script>
