@@ -14,10 +14,17 @@ function drawChart() {
     ]);
 
     var options = {
-        title: 'Total Biofarmaka Indonesia',
+        title: 'Total Tanaman Biofarmaka Seluruh Indonesia',
+        backgroundColor: 'transparent',
+        animation: {
+            startup: true,
+            duration: 1000,
+            easing: 'out'
+        }
     };
 
 
-    var chart = new google.visualization.ColumnChart(document.getElementById('id'));
+    var chart = new google.visualization.ColumnChart(document.getElementById('id')); 
     chart.draw(data, options);
+    
 }

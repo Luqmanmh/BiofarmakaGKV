@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <link rel="stylesheet" href="bar.css">
+    <script src="https://kit.fontawesome.com/c75057c9b4.js" crossorigin="anonymous"></script>
     <script src="script/barmain.js"></script>
     <script src="script/barhitam.js"></script>
     <script src="script/barjahe.js"></script>
@@ -18,14 +19,24 @@
 </head>
 
 <body>
-    <button type="button" class="open-filein" data-target="id">id</button>
-    <button type="button" class="open-filein" data-target="hitam">temuireng</button>
-    <button type="button" class="open-filein" data-target="jahe">jahe</button>
-    <button type="button" class="open-filein" data-target="kencur">kencur</button>
-    <button type="button" class="open-filein" data-target="kunyit">kunyit</button>
-    <button type="button" class="open-filein" data-target="laos">laos</button>
-    <button type="button" class="open-filein" data-target="lawak">temulawak</button>
-    <button type="button" class="open-filein" data-target="lemp">lempuyangan</button>
+    <nav>
+        <h2>Produksi Tanaman Biofarmaka (Obat), 2021-2022</h2>
+    </nav>
+
+
+    <div class="buttoncarr">
+        <div id="graph" class="id">
+            <button type="button" class="bid" data-target="id">Indonesia</button>
+            <button type="button" class="bhitam" data-target="hitam">Temuireng</button>
+            <button type="button" class="bjahe" data-target="jahe">Jahe</button>
+            <button type="button" class="bkencur" data-target="kencur">Kencur</button>
+            <button type="button" class="bkunyit" data-target="kunyit">Kunyit</button>
+            <button type="button" class="blaos" data-target="laos">Laos</button>
+            <button type="button" class="blawak" data-target="lawak">Temulawak</button>
+            <button type="button" class="blemp" data-target="lemp">Lempuyangan</button>
+        </div>
+    </div>
+
     <div class="graphcarr">
         <div id="graph" class="id">
             <div id="id" class="main"></div>
@@ -37,21 +48,55 @@
             <div id="lawak" class="main"></div>
             <div id="lemp" class="main"></div>
         </div>
-        <div class="description id-desc">Pada data Produksi Tanaman Biofarmaka Indonesia, dapat dilihat secara keseluruhan Jahe memiliki jumlah paling banyak jika dibandingkan dengan tanaman lain selama 2 tahun</div>
-        <div class="description hitam-desc">Selama 2 tahun, Jawa Timur menjadi produsen Temuireng terbesar yaitu sebesar 4.163.118 pada tahun 2021 dan 2.977.873 pada tahun 2022</div>
-        <div class="description jahe-desc">Pada tahun 2021 Sulawesi Selatan sebagai produsen Jahe terbesar yaitu sebesar 60.793.383 sedangkan pada tahun 2022 oleh Jawa Barat yaitu sebesar 54.741.570</div>
-        <div class="description kencur-desc">Selama 2 tahun, Jawa Tengah menjadi produsen Kencur terbesar yaitu sebesar 15.612.280 pada tahun 2021 dan 14.777.968 pada tahun 2022</div>
-        <div class="description kunyit-desc">Selama 2 tahun, Jawa Timur menjadi produsen Kunyit terbesar yaitu sebesar 82.988.205 pada tahun 2021 dan 102.772.963 pada tahun 2022</div>
-        <div class="description laos-desc">Selama 2 tahun, Jawa Barat menjadi produsen Laos terbesar yaitu sebesar 19.385.851 pada tahun 2021 dan 17.984.286 pada tahun 2022</div>
-        <div class="description lawak-desc">Selama 2 tahun, Jawa Timur menjadi produsen Temulawak terbesar yaitu sebesar 23.111.308 pada tahun 2021 dan 20.816.841 pada tahun 2022</div>
-        <div class="description lemp-desc">Selama 2 tahun, Jawa Timur menjadi produsen Lempuyangan terbesar yaitu sebesar 5.096.901 pada tahun 2021 dan 3.784.797 pada tahun 2022</div>
+
+        <div class="line"></div>
+
+        <div class="infocarr">
+            <div id="graph" class="id">
+                <div class="description" id="id-desc">
+                    <p>Pada data Produksi Tanaman Biofarmaka Indonesia, dapat dilihat secara keseluruhan
+                        Jahe memiliki jumlah paling banyak jika dibandingkan dengan tanaman lain selama 2 tahun. Selain
+                        kunyit, semua jenis tanaman biofarmaka mengalami penurunan dari tahun 2021 ke 2022</p>
+                </div>
+                <div class="description" id="hitam-desc">
+                    <p>Selama 2 tahun, Jawa Timur menjadi produsen Temuireng terbesar yaitu sebesar
+                        4.163.118 pada tahun 2021 dan 2.977.873 pada tahun 2022</p>
+                </div>
+                <div class="description" id="jahe-desc">
+                    <p>Pada tahun 2021 Sulawesi Selatan sebagai produsen Jahe terbesar yaitu sebesar
+                        60.793.383 sedangkan pada tahun 2022 oleh Jawa Barat yaitu sebesar 54.741.570</p>
+                </div>
+                <div class="description" id="kencur-desc">
+                    <p>Selama 2 tahun, Jawa Tengah menjadi produsen Kencur terbesar yaitu sebesar
+                        15.612.280 pada tahun 2021 dan 14.777.968 pada tahun 2022</p>
+                </div>
+                <div class="description" id="kunyit-desc">
+                    <p>Selama 2 tahun, Jawa Timur menjadi produsen Kunyit terbesar yaitu sebesar
+                        82.988.205 pada tahun 2021 dan 102.772.963 pada tahun 2022</p>
+                </div>
+                <div class="description" id="laos-desc">
+                    <p>Selama 2 tahun, Jawa Barat menjadi produsen Laos terbesar yaitu sebesar
+                        19.385.851 pada tahun 2021 dan 17.984.286 pada tahun 2022</p>
+                </div>
+                <div class="description" id="lawak-desc">
+                    <p>Selama 2 tahun, Jawa Timur menjadi produsen Temulawak terbesar yaitu sebesar
+                        23.111.308 pada tahun 2021 dan 20.816.841 pada tahun 2022</p>
+                </div>
+                <div class="description" id="lemp-desc">
+                    <p>Selama 2 tahun, Jawa Timur menjadi produsen Lempuyangan terbesar yaitu sebesar
+                        5.096.901 pada tahun 2021 dan 3.784.797 pada tahun 2022</p>
+                </div>
+            </div>
+        </div>
+
     </div>
+
 </body>
 
 </html>
 <script>
     const swap = localStorage.getItem('graph');
-    const graph = document.getElementById("graph");
+    const graph = document.querySelectorAll("#graph");
     const descriptions = document.querySelectorAll('.description');
     const btns = document.querySelectorAll("[data-target]");
 
@@ -63,16 +108,10 @@
     });
 
     if (swap) {
-        graph.className = swap;
-        descriptions.forEach(desc => {
-            if (desc.classList.contains(`${swap}-desc`)) {
-                desc.style.display = 'block';
-            } else {
-                desc.style.display = 'none';
-            }
+        graph.forEach((grf) => {
+            grf.className = swap;
         });
-    } else {
-        graph.className = 'id';
-        document.querySelector('.id-desc').style.display = 'block';
     }
+
+
 </script>

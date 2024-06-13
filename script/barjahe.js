@@ -41,10 +41,16 @@ function drawChart() {
     ]);
 
     var options = {
-        title: 'Total jahe Indonesia',
+        title: 'Total Jahe Indonesia',
         hAxis: {
             slantedText: true,
             slantedTextAngle: 45,
+        },
+        backgroundColor: 'transparent',
+        animation: {
+            startup: true,
+            duration: 1000,
+            easing: 'out'
         }
     };
 

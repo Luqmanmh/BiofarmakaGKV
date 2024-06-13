@@ -1,94 +1,201 @@
-/* for swap script */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(bg1.png);
+    text-align: center;
+}
+
+nav {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+}
+
+nav h2 {
+    padding: .7rem;
+    margin: auto;
+}
+
+button {
+    width: 7rem;
+    height: 1.5rem;
+    margin: 0 .5rem;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.line {
+    margin: 1rem auto;
+    border: black .2px solid;
+    width: 80rem;
+}
+
 .main {
     display: none;
     width: 80rem;
     height: 30rem;
+    z-index: 2;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: black;
+    display: none;
+    width: 80rem;
+}
+
+.description p {
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.graphcarr {
+    background-color: white;
+    width: 85rem;
+    height: 40rem;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
     margin: auto;
 }
+
+.infocarr {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+}
+
+.buttoncarr {
+    margin: 1rem auto;
+}
+
+/* for swap script */
 
 /* id */
 .id #id {
     display: block;
 }
-.id .description.id-desc {
+
+.id #id-desc {
     display: block;
 }
+
+.id .bid {
+    background: none;
+    color: white;
+}
+
 /* hitam */
 .hitam #hitam {
     display: block;
 }
-.hitam .description.hitam-desc {
+
+.hitam #hitam-desc {
     display: block;
+}
+
+.hitam .bhitam {
+    background: none;
+    color: white;
 }
 
 /* jahe */
 .jahe #jahe {
     display: block;
 }
-.jahe .description.jahe-desc {
+
+.jahe #jahe-desc {
     display: block;
+}
+
+.jahe .bjahe {
+    background: none;
+    color: white;
 }
 
 /* kencur */
 .kencur #kencur {
     display: block;
 }
-.kencur .description.kencur-desc {
+
+.kencur #kencur-desc {
     display: block;
+}
+
+.kencur .bkencur {
+    background: none;
+    color: white;
 }
 
 /* kunyit */
 .kunyit #kunyit {
     display: block;
 }
-.kunyit .description.kunyit-desc {
+
+.kunyit #kunyit-desc {
     display: block;
+}
+
+.kunyit .bkunyit {
+    background: none;
+    color: white;
 }
 
 /* laos */
 .laos #laos {
     display: block;
 }
-.laos .description.laos-desc {
+
+.laos #laos-desc {
     display: block;
+}
+
+.laos .blaos {
+    background: none;
+    color: white;
 }
 
 /* temulawak */
 .lawak #lawak {
     display: block;
 }
-.lawak .description.lawak-desc {
+
+.lawak #lawak-desc {
     display: block;
+}
+
+.lawak .blawak {
+    background: none;
+    color: white;
 }
 
 /* lempuyangan */
 .lemp #lemp {
     display: block;
 }
-.lemp .description.lemp-desc {
+
+.lemp #lemp-desc {
     display: block;
 }
 
+.lemp .blemp {
+    background: none;
+    color: white;
+}
+
 /* endfor */
-
-body {
-    background-color: rgb(255, 255, 255);
-}
-
-#graph {
-    margin: auto;
-    background-color: white;
-    width: 80rem;
-}
-
-.graphcarr {
-    text-align: center;
-    align-items: center;
-}
-
-.description {
-    margin-top: 1rem;
-    font-size: 1rem;
-    color: black;
-    display: none; /* Default to hidden */
-}
