@@ -47,12 +47,12 @@ button:hover {
 .line {
     margin: 1rem auto;
     border: black .2px solid;
-    width: 100%;
+
 }
 
 .main {
     display: none;
-    width: 80rem;
+    margin: 0 auto;
     height: 30rem;
 }
 
@@ -204,6 +204,20 @@ button:hover {
 
 /* endfor */
 
+@media screen and (max-width:1300px) {
+    #graph {
+        overflow: auto;
+    }
+
+    .main {
+        display: none;
+        width: 110rem;
+        height: auto;
+        min-height: 41rem;
+    }
+
+}
+
 @media screen and (max-width:600px) {
     .graphcarr {
         background-color: white;
@@ -222,17 +236,9 @@ button:hover {
         width: 100%;
     }
 
-    #graph {
-        overflow: auto;
 
-    }
 
-    .main {
-        display: none;
-        width: 80rem;
-        height: auto;
-        min-height: 41rem;
-    }
-    
+
+
 
 }
