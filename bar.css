@@ -206,7 +206,8 @@ button:hover {
 
 @media screen and (max-width:1300px) {
     #graph {
-        overflow: auto;
+        overflow-y: hidden;
+        overflow-x: auto;
     }
 
     .main {
